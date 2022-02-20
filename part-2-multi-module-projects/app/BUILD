@@ -11,8 +11,8 @@ android_binary(
     srcs = ["src/io/morfly/bfa/MainActivity.java"],
     resource_files = glob(["res/**"]),
     deps = [
+        "//my-feature:my-feature",
         "//my-feature:my-feature-with-res",
         "//my-jvm-feature:my-jvm-feature"
     ]
 )
-
