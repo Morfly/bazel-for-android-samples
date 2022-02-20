@@ -1,4 +1,4 @@
-package io.morfly.bfa.myfeature;
+package io.morfly.bfa;
 
 
 public class MyAndroidFeature {

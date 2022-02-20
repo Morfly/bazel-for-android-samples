@@ -1,4 +1,5 @@
-package io.morfly.bfa.myjvmfeature;
+package io.morfly.bfa;
+
 
 public class MyJvmFeature {
 

@@ -1,6 +1,7 @@
-package io.morfly.bfa.myfeature;
+package io.morfly.bfa;
 
 import android.content.Context;
+
 
 public class MyAndroidFeatureWithRes {
 

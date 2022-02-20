@@ -6,7 +6,7 @@ android_binary(
     manifest = "AndroidManifest.xml",
     manifest_values = {
         "minSdkVersion": "21",
-        "targetSdkVersion": "30",
+        "targetSdkVersion": "29",
     },
     srcs = ["src/io/morfly/bfa/MainActivity.java"],
     resource_files = glob(["res/**"]),
