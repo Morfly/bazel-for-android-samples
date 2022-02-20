@@ -12,19 +12,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MyAndroidFeature myAndroidFeature = new MyAndroidFeature();
-        MyAndroidFeatureWithRes myAndroidFeatureWithRes = new MyAndroidFeatureWithRes();
-        MyJvmFeature myJvmFeature = new MyJvmFeature();
+        MyFeature myFeature = new MyFeature();
+        MyFeatureWithRes myFeatureWithRes = new MyFeatureWithRes();
 
         TextView textView = findViewById(R.id.textView);
 
         String appInfo = textView.getText()
                 + "\n\nEnabled features:\n"
-                + myAndroidFeature.getInfo()
+                + myFeature.getInfo()
                 + "\n"
-                + myAndroidFeatureWithRes.getInfo(this)
-                + "\n"
-                + myJvmFeature.getInfo();
+                + myFeatureWithRes.getInfo(this);
 
         textView.setText(appInfo);
     }

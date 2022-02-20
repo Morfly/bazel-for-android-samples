@@ -13,6 +13,5 @@ android_binary(
     deps = [
         "//my-feature:my-feature",
         "//my-feature:my-feature-with-res",
-        "//my-jvm-feature:my-jvm-feature"
     ]
 )
