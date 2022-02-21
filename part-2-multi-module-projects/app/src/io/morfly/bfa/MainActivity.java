@@ -7,18 +7,20 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+    // Instaitiate features.
+    MyFeature myFeature = new MyFeature();
+    MyFeatureWithRes myFeatureWithRes = new MyFeatureWithRes();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MyFeature myFeature = new MyFeature();
-        MyFeatureWithRes myFeatureWithRes = new MyFeatureWithRes();
-
         TextView textView = findViewById(R.id.textView);
 
+        // Display info about included features.
         String appInfo = textView.getText()
-                + "\n\nEnabled features:\n"
+                + "\n\nIncluded features:\n"
                 + myFeature.getInfo()
                 + "\n"
                 + myFeatureWithRes.getInfo(this);
